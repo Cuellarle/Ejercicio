@@ -1,0 +1,93 @@
+h1{
+  font-size: 2em;
+  color: rgb(0, 165, 254);
+  text-align: center;
+}
+
+nav{
+    background-color: #f5efd7;
+    padding: 10px;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+    color: rgb(0, 165, 254);
+    font-size: 1.8em;
+
+}
+
+#nav-container :hover{
+  text-decoration: none;
+}
+
+#logo{
+  width:20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+table{
+  width: 80%;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 8px black;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: x-large;
+}
+
+th{
+  background-color: beige;
+  color:rgb(0, 165, 254);
+  padding: 12 px;
+  font-weight: bold;
+  border: 3px solid #aaa;
+}
+
+td{
+  border: 1px solid #777;
+  padding: 8px;
+  text-align: center;
+  background-color: aqua;
+  color:rgb(0, 165, 254)
+}
+
+table :hover{
+  background-color: aliceblue;
+  transition: background-color 0.1s ease;
+}
+
+header{
+  background-color: aqua;
+}
+
+footer{
+  background-color: beige;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  color:rgb(0, 165, 254);
+  font-size: 1.2em;
+}
+
+.contenido{
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.contenido strong{
+  color:rgb(0, 165, 254);
+}
+

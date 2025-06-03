@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Productos - Tienda Feliz{% endblock %}
+
+{% block content %}
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Existencia</th>
+            <th>Precio</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for producto in productos %}
+        <tr>
+            <td>{{ producto.nombre }}</td>
+            {% if producto.disponible %}
+                <td>&check;</td>
+            {% else %}
+                <td>&cross;</td>
+            {% endif %}
+                <td>${{ producto.precio }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% if productos %}
+    <div class="contenido">
+        <p>Total de productos: {{ productos|length }}</p>
+    </div>
+{% else %}
+<div class="contenido">
+    <p>No hay productos disponibles.</p>
+</div>
+{%endif %}
+
+{% endblock %}

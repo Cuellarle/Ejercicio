@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="Inicio" content="width=device-width, initial-scale=1">
+    <title>Tienda Feliz</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div id = "logo-container">
+            <a href="{% url 'inicio' %}">
+                <img src="{% static 'img/LaTiendaFeliz_logo.png' %}" alt="Logo de Tienda Feliz" id="logo">
+            </a>
+        </div>
+        <h1>{% block title %}Tienda Feliz{% endblock %}</h1>
+        <div id = "nav-container">
+        <nav>
+            <ul>
+                <li><a href="{% url 'inicio' %}">Inicio</a></li>
+                <li><a href="{% url 'productos' %}">Productos</a></li>  
+                <li><a href="{% url 'nosotros' %}">Nosotros</a></li>  
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>

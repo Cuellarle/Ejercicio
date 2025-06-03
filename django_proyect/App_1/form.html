@@ -1,0 +1,14 @@
+<form action = "/getform/" method = "POST">
+    {% csrf_token %}
+    <p> ID usuario: <input type = "text" name = "id" /></p>
+    <p> Nombre: <input type = "text" name = "nombre" /></p>
+    <input type = "submit">
+</form> 
+<!-- 
+<form action = "/getsample/" method = "SHOW">
+    {$ {% csrf_token %}}
+    <p> ID sample: <input type = "text" name = "id" /></p>
+    <p> Type: <input type = "text" name = "sample_type" /></p>
+    <p> Amount: <input type = "int" name = "sample_amount" /></p>
+    <input type = "submit">
+</form> -->
